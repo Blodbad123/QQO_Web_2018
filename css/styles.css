@@ -1,0 +1,337 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+   font-family: "Lato", sans-serif;
+   
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: rgba(50,50,50,50);  
+    //color: rgb(133,40,90); 
+    //text-decoration-color: aqua
+    color: salmon;
+    cursor: crosshair;
+    scroll-behavior: auto;
+    /*animation: colorchange 1s; 
+    -webkit-animation: colorchange 1s; */
+}
+/*@keyframes colorchange{
+    0% {background-color: yellow}
+    100% {background-color: blue}
+}*/
+
+h1 {
+    font-size: 4em; 
+    text-align: center; 
+    font-weight: 800; 
+}
+
+h2{
+    font-size: 2.5em; 
+    text-align: center; 
+    font-weight: 400; 
+    padding-top: 25px; 
+    padding-bottom: 35px; 
+     
+}
+
+section {
+    margin-bottom: 10%;
+}
+
+.mainouter{
+    margin: 0 auto; 
+    width: 70%; 
+}
+
+h3{
+    font-size: 1.4em; 
+    font-weight: 100; 
+}
+
+p{
+    font-size: 1em; 
+    font-weight: 100; 
+  line-height: 28px;
+    padding-bottom: 10px; 
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+    opacity: 0.9;
+    
+    
+}
+.sidenav a {
+    padding-bottom: 20px;
+
+    text-decoration: none;
+    text-align: center; 
+    font-size: 25px;
+    color: salmon;;
+    display: block;
+    transition: 0.5s;
+    cursor: crosshair;
+}
+
+.sidenav a:hover {
+    color: black;
+    cursor: crosshair;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    width:100%;
+    text-align: center; 
+}
+
+.inner {
+ position: relative;
+    top:50%;
+    
+}
+
+
+.banner{
+    width : 100%; 
+    height : 100%; 
+    /*background-color: antiquewhite; */
+}
+
+.banner h1{
+    padding-top : 140px; 
+}
+
+.music-row{
+    width:100%;
+    height:550px; 
+   /* background-color: aquamarine; */
+    margin: 0 auto; 
+    text-align: center;    
+}
+
+.music-coloumn{
+    position: relative; 
+    text-align: center; 
+    width:50%; 
+    float:left; 
+    
+}
+
+.music-coloumn h3 {
+    
+    padding-top: 8px;
+}
+
+.music-coloumn img{
+    width:350px; 
+    transition-duration: .3s;
+}
+
+.music-coloumn iframe{
+   width:300px; 
+    height: 300px
+}
+
+.recordinfo{
+    /*Position Text in the center of images*/
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Width lower thann image size!*/
+    width:300px; 
+    opacity: 0; 
+    transition-duration: .5s;
+}
+
+.music-coloumn img:hover{
+    filter:blur(6px); 
+}
+
+.music-coloumn img:hover + .recordinfo{
+    opacity: 1; 
+    transition-duration: .3s;
+}
+
+.about{
+    width:100%; 
+    height:500px; 
+    /*background-color: cadetblue;*/
+}
+.about-text{
+    width:82%; 
+    margin: 0 auto; 
+    
+}
+
+.reviews{
+    width: 100%; 
+    height:550px;
+   /* background-color: chocolate; */
+}
+
+.statement{
+    width:50%; 
+    float:left; 
+   
+}
+
+#text-in-review{
+     border-style: dashed;
+     border-width: 1px; 
+     width:80%; 
+     margin:0 auto; 
+     padding : 6%; 
+    margin-bottom: 8%; 
+    
+}
+
+
+/*.image-container{
+    width:100%; 
+    height:600px; 
+   
+    
+}*/
+
+#myCarousel{
+    margin-bottom: 35px; 
+}
+
+.parallax { 
+    /* The image used */
+    
+
+    /* Set a specific height */ 
+    height: auto; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#topbtn {
+    transition-duration: .5s; 
+    position: fixed;
+    font-size:30px; 
+    left:0;
+    bottom:0;
+    cursor:pointer; 
+    padding:10px;
+    cursor: crosshair;
+}
+
+#openbtn {
+    transition-duration: .5s; 
+    position: fixed;
+    font-size:30px; 
+    right: 0;
+    cursor:pointer; 
+    padding:10px;
+    cursor: crosshair;
+}
+
+#openbtn:hover{
+    color: black;
+}
+
+#topbtn:hover {
+    color: black;   
+}
+
+@media screen and (max-width: 1100px) {
+    
+    h1{
+        font-size: 4em; 
+    }
+    
+        .mainouter{
+        margin: 0 auto; 
+        width: 90%; 
+    }
+}
+
+@media screen and (max-width: 760px) {
+    h1{
+        font-size: 3em; 
+    }
+    
+    
+    .music-coloumn{
+        width:100%; 
+        margin-bottom: 10%; 
+        transition-duration: .3s;
+    }
+    
+    .music-row{
+        width:100%;
+        height:1000px; 
+        margin: 0 auto; 
+        text-align: center;    
+    }
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
