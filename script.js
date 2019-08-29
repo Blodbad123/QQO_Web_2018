@@ -50,8 +50,8 @@ function changeBackground(){
     
     var currentCol = getStyle(body, 'background-color');
     currentFontCol = getFontColor();
-    console.log("Background color: " +currentFontCol); 
-    console.log("Font color: "+currentCol); 
+    console.log("Background color: " +currentCol); 
+    console.log("Font color: "+currentFontCol); 
     
     var screenRange = height - window.innerHeight;
     

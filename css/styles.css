@@ -28,11 +28,11 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-color: rgba(50,50,50,50);  
-    //color: rgb(133,40,90); 
-    //text-decoration-color: aqua
-    color: salmon;
-    cursor: crosshair;
+    background-color: rgb(60,60,60);  
+    color: rgb(133,40,90);  
+    text-decoration-color: aqua;
+    color: rgb(150,150,150);
+    cursor: pointer;
     scroll-behavior: auto;
     /*animation: colorchange 1s; 
     -webkit-animation: colorchange 1s; */
@@ -208,7 +208,7 @@ table {
 
 .about{
     width:100%; 
-    height:500px; 
+    height:250px; 
     /*background-color: cadetblue;*/
 }
 .about-text{
@@ -248,7 +248,8 @@ table {
 }*/
 
 #myCarousel{
-    margin-bottom: 35px; 
+    margin: 0 35px 55px 35px; 
+    
 }
 
 .parallax { 
